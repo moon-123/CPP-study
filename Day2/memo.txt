@@ -1,0 +1,51 @@
+cin은 자동으로 정수를 저장하는 타입으로 변환됨
+0은 숫자가 아니라는 의미임
+
+C++은 숫자에 따라 표준 문법이나 라이브러리 변경사항이 있음
+
+C++ 표준 변화 알아보기
+
+C++98
+    - 80년대 말 스트룹과 마가렛이 유명한 Annotated C++ Reference Manual(ARM) 책을 저술
+    - 너무 많은 C++ 독립 구현체들이 있었기 때문에 ARM은 C++의 기능을 정의함
+    - C++ 표준인 C++98의 기초가 됨
+    - Templates
+    - STL(Standard Template Library): 컨테이너, 알고리즘, 스트링, IO Stream들을 포함
+
+C++03
+    - C++03 에서는 아주 작은 기술 수정이 이뤄짐
+    - C++98을 포함한 C++03을 "레거시 C++"이라고 부름
+
+TR1
+    - 2005년 TR1(Technical Report 1)이 발간
+    - C++11을 위한 큰 발걸음이자 Modern C++로 향하는 첫걸음
+    - C++ 표준 위원회 멤버들의 Boost 프로젝트에 기반
+    - 차세대 C++ 표준에 들어갈 13개의 라이브러리를 포함(정규식, 난수, std::shard_ptr 같은 스마트 포인터, 해쉬테이블 등)
+
+C++11
+    - 다음 C++ 표준이었지만, 우린 Modern C++ 이라고 부름, C++14 와 C++17 을 포함
+    - C++11은 C++을 개발하는 방식을 완전히 바꿔버림
+    - TR1의 컴포넌트 뿐만 아니라 move-semantic, perfect forwarding, varidadic templates, constexpr 등을 가져옴
+    - 스레딩 기반의 메모리 모델과 Threading API가 포함
+
+        1. 확장할 수 있는 난수 생성기의 추가 : random 헤더 파일
+        2. 튜플 템플릿의 추가: tuple 헤더 파일
+        3. 정규 표현식의 추가 : regex 헤더 파일
+        4. 다중 프로그래밍을 위한 스레드의 지원 : thread_local 키워드, automic 헤더 파일
+        5. 임베디드 프로그래밍을 위한 저수준 프로그래밍 지원
+
+C++17
+    - 크지도 작지도 않음
+    - 2개의 뛰어난 기능을 포함: Parrallel STL과 표준화된 파일 시스템
+    - Boost에서 많이 영향을 받음, 파일 시스템과 3개의 데이터 타입(std::optional, std::variant, std::any)
+
+C++20
+    - C++20은 C++11과 마찬가지로 우리가 C++ 프로그래밍하는 것을 바꿔 버림
+    - Ranges, Contourtines, Concepts, Modules
+
+C++23
+    - 2023 7월 현재 C++23이 최종 투표를 앞두고 있음
+    - 작지만 언어 자체에 매우 영향력 있는 기능인 "Debucing this"를 추가
+    - 파이썬과 비슷하게, 멤버 함수에 implict하게 전달된 this포인터를 explicit할 수 있음
+    - 패턴 구현이 간단해짐
+    - 충요한 추가들이 있음
