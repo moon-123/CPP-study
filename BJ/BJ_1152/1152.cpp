@@ -1,24 +1,26 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    char str[] = "";
-    int cnt = 0;
-    bool isword = false;
-    cin >> str;
-    for (int i = 0; str[i] != '\0'; i++)
+    string str1 = "";
+    int cnt = 1;
+    getline(cin, str1);
+
+    if (str1 == " ")
     {
-        if (str[i] == ' ')
-        {
-            if ((int)str[i + 1] >= 65 & (int)str[i + 1] <= 122)
-            {
-                
-            }
-        }
+        cnt = 0;
     }
 
-    cout << cnt + 1;
+    for (int i = 0; str1[i] != '\0'; i++)
+    {
+        if (str1[i] == ' ' && i != 0 && str1[i + 1] != '\0')
+        {
+            cnt += 1;
+        }
+    }
+    cout << cnt;
     return 0;
 }
